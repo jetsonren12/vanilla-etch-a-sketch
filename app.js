@@ -11,6 +11,7 @@ greyBtn.innerText = 'Grey tiles'
 
 let input = document.createElement('input')
 input.setAttribute('type', 'text')
+input.setAttribute('placeholder', 'Submit number - ex. 64')
 input.setAttribute('value', '')
 input.addEventListener('click', (e) => {e.target.value = ''})
 
@@ -18,7 +19,7 @@ let submitBtn = document.createElement('button')
 submitBtn.setAttribute('id','submit')
 submitBtn.innerText = 'Submit'
 
-submitBtn.addEventListener('click', (e) => {
+submitBtn.addEventListener('click', () => {
     if(submitBtn.innerText === 'Submit'){
         buildSketch(input.value)
         input.value = ''
@@ -30,7 +31,7 @@ submitBtn.addEventListener('click', (e) => {
 
 })
 
-greyBtn.addEventListener('click', (e) => {
+greyBtn.addEventListener('click', () => {
     let tiles = document.querySelectorAll('.tile')
     tiles.forEach(t => {
         t.addEventListener('mouseover', () => {
@@ -39,7 +40,7 @@ greyBtn.addEventListener('click', (e) => {
     })
 })
 
-colorBtn.addEventListener('click', (e) => {
+colorBtn.addEventListener('click', () => {
     let tiles = document.querySelectorAll('.tile')
     tiles.forEach(t => {
         t.addEventListener('mouseover', () => {
