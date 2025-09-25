@@ -15,10 +15,27 @@ input {
     background-color: white;
 }
 
+#submit {
+    background-color: rgb(140, 71, 235);
+    color: rgb(248, 244, 255);
+    transition: background-color 1s
+    color 1s;
+}
+
+#submit:hover {
+    color: rgb(140, 71, 235);
+    background-color: rgb(255, 255, 255);
+}
+
 #header-container {
     display: flex;
     align-items: center;
     gap: 50px;
+}
+
+#btn-container {
+    display: flex;
+    gap: 15px;
 }
 
 .sketch-container {
