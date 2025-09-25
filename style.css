@@ -25,10 +25,7 @@ body {
 .tile {
     border: 0.5px solid black;
     flex: 1;
-    transition: background-color 1s ease-out;
 }
 
-.tile:hover {
-    background-color: yellow;
-}
+
 
