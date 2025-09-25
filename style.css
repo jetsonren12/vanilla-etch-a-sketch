@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sketch-container {
+    display: flex;
+    border: 0.5px solid black;
+    width: 960px;
+    height: 750px;
+}
+
+.column-container{
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid black;
+    flex: 1;
+
+}
+
+.tile {
+    border: 0.5px solid black;
+    flex: 1;
+}
+
