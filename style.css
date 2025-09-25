@@ -7,6 +7,20 @@ body {
     flex-direction: column;
 }
 
+button,
+input {
+    border: 1px solid rgb(140, 71, 235);
+    border-radius: 10px;
+    padding: 8px 16px;
+    background-color: white;
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
 .sketch-container {
     display: flex;
     flex-direction: column;
@@ -19,7 +33,6 @@ body {
     display: flex;
     border: 0.5px solid black;
     flex: 1;
-
 }
 
 .tile {
