@@ -1,17 +1,31 @@
 let body = document.querySelector('body')
 let sketch = document.querySelector('.sketch-container')
-let tile = document.createElement('div')
 
-for(let x = 10; x > 0; x--){
-    let column = document.createElement('div')
-    column.setAttribute('class','column-container')
-    for(let y = 10; y > 0; y--){
+
+function createColumn(n){
+    for(let x = n ; x > 0 ; x--){
+        let column = document.createElement('div')
+        column.setAttribute('class','column-container')
+        createTile(column,n)
+        sketch.append(column)
+    }
+}
+
+function createTile(col,n){
+    for(let y = n ; y > 0 ; y--){
         let tile = document.createElement('div')
         tile.setAttribute('class','tile')
-        column.append(tile)
+        tile.addEventListener('mouseover', () =>{
+            tile.style.backgroundColor = ''
+        })
+        col.append(tile)
     }
-    sketch.append(column)
 }
+
+function buildSketch(n){createColumn(n)}
+
+buildSketch(5)
+
 
 
 

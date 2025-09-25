@@ -9,6 +9,7 @@ body {
 
 .sketch-container {
     display: flex;
+    flex-direction: column;
     border: 0.5px solid black;
     width: 960px;
     height: 750px;
@@ -16,7 +17,6 @@ body {
 
 .column-container{
     display: flex;
-    flex-direction: column;
     border: 0.5px solid black;
     flex: 1;
 
@@ -25,5 +25,10 @@ body {
 .tile {
     border: 0.5px solid black;
     flex: 1;
+    transition: background-color 1s ease-out;
+}
+
+.tile:hover {
+    background-color: yellow;
 }
 
